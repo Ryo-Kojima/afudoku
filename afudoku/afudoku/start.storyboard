@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nN5-BA-iY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nN5-BA-iY6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -175,24 +174,23 @@
                             <constraint firstItem="ay7-5I-k57" firstAttribute="top" secondItem="MVK-ss-YKk" secondAttribute="bottom" constant="22" id="9H7-0S-PHd"/>
                             <constraint firstItem="Vef-bI-x95" firstAttribute="top" secondItem="ay7-5I-k57" secondAttribute="bottom" constant="31" id="9HX-39-4vm"/>
                             <constraint firstItem="dfX-ys-C7U" firstAttribute="top" secondItem="xQK-tL-r7c" secondAttribute="bottom" constant="18" id="B9q-ty-wSx"/>
+                            <constraint firstItem="MVK-ss-YKk" firstAttribute="trailing" secondItem="Yfm-cJ-h41" secondAttribute="trailing" id="C5u-Os-lb0"/>
                             <constraint firstItem="dfX-ys-C7U" firstAttribute="top" secondItem="z5z-eL-CQF" secondAttribute="top" constant="54" id="Ev5-6i-eBv"/>
                             <constraint firstItem="z5z-eL-CQF" firstAttribute="trailing" secondItem="xQK-tL-r7c" secondAttribute="trailing" constant="16" id="GlF-VP-Lki"/>
-                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="trailing" secondItem="MVK-ss-YKk" secondAttribute="trailing" id="MoX-JK-o3V"/>
                             <constraint firstItem="7T5-AZ-dn9" firstAttribute="leading" secondItem="z5z-eL-CQF" secondAttribute="leading" constant="16" id="SUI-xW-1FK"/>
-                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="leading" secondItem="z5z-eL-CQF" secondAttribute="leading" constant="16" id="TMF-fz-sJU"/>
-                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="leading" secondItem="yzx-A2-ajk" secondAttribute="leadingMargin" id="Xti-mO-gWx"/>
-                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="top" secondItem="dfX-ys-C7U" secondAttribute="bottom" constant="43" id="gAa-D2-E2I"/>
+                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="leading" secondItem="z5z-eL-CQF" secondAttribute="leading" constant="16" id="Zci-uA-R1v"/>
                             <constraint firstItem="z5z-eL-CQF" firstAttribute="trailing" secondItem="dfX-ys-C7U" secondAttribute="trailing" constant="120" id="gI6-zb-hjf"/>
                             <constraint firstItem="MVK-ss-YKk" firstAttribute="leading" secondItem="ay7-5I-k57" secondAttribute="leading" id="h6a-72-Qft"/>
                             <constraint firstItem="Vef-bI-x95" firstAttribute="trailing" secondItem="ay7-5I-k57" secondAttribute="trailing" id="hdT-bG-WzJ"/>
                             <constraint firstItem="dfX-ys-C7U" firstAttribute="leading" secondItem="z5z-eL-CQF" secondAttribute="leading" constant="120" id="hiR-N1-ML0"/>
                             <constraint firstItem="xQK-tL-r7c" firstAttribute="leading" secondItem="z5z-eL-CQF" secondAttribute="leading" constant="16" id="i1N-aV-szv"/>
+                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="top" secondItem="dfX-ys-C7U" secondAttribute="bottom" constant="43" id="jIh-o0-IYN"/>
+                            <constraint firstItem="z5z-eL-CQF" firstAttribute="trailing" secondItem="Yfm-cJ-h41" secondAttribute="trailing" constant="16" id="jei-iX-qQM"/>
                             <constraint firstItem="MVK-ss-YKk" firstAttribute="trailing" secondItem="ay7-5I-k57" secondAttribute="trailing" id="qNx-Nd-RL1"/>
-                            <constraint firstItem="MVK-ss-YKk" firstAttribute="top" secondItem="Yfm-cJ-h41" secondAttribute="bottom" constant="18" id="qe5-lp-zQa"/>
                             <constraint firstItem="z5z-eL-CQF" firstAttribute="bottom" secondItem="7T5-AZ-dn9" secondAttribute="bottom" constant="5" id="rWW-4M-ZnD"/>
-                            <constraint firstItem="Yfm-cJ-h41" firstAttribute="leading" secondItem="MVK-ss-YKk" secondAttribute="leading" id="tMI-r9-px7"/>
-                            <constraint firstItem="z5z-eL-CQF" firstAttribute="trailing" secondItem="Yfm-cJ-h41" secondAttribute="trailing" constant="16" id="vPu-vR-ZqL"/>
                             <constraint firstItem="Vef-bI-x95" firstAttribute="leading" secondItem="ay7-5I-k57" secondAttribute="leading" id="wy3-pH-pKy"/>
+                            <constraint firstItem="MVK-ss-YKk" firstAttribute="leading" secondItem="Yfm-cJ-h41" secondAttribute="leading" id="xFN-lO-qmc"/>
+                            <constraint firstItem="MVK-ss-YKk" firstAttribute="top" secondItem="Yfm-cJ-h41" secondAttribute="bottom" constant="18" id="z1C-t7-bd8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z5z-eL-CQF"/>
                     </view>
@@ -221,6 +219,6 @@
         <image name="iconmonstr-user-6-96" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rIh-Hw-dZc"/>
+        <segue reference="VCh-7i-1Yh"/>
     </inferredMetricsTieBreakers>
 </document>

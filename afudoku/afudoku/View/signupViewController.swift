@@ -94,9 +94,11 @@ class signupViewController: UIViewController {
                 print(error?.localizedDescription)
                 return
             }
-            let ref = Database.database().reference()
+            var ref: DatabaseReference!
+            
+ref = Database.database().reference()
             let usersReference = ref.child("users")
-            print(ref.description()) //https://afudoku-4ebb8.firebaseio.com/
+            print(ref.description()); //https://afudoku-4ebb8.firebaseio.com/
             let uid = user.uid
             let newUserReference = usersReference.child(uid)
             usersReference.setValue(["username" : self.user.text!,"email" : self.email.text!])
