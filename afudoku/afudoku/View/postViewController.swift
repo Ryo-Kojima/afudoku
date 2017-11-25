@@ -16,7 +16,24 @@ class postViewController: UIViewController {
         super.viewDidLoad()
         var selectedImage: UIImage?
         
+//        func postcomic() {
+//            var ref: StorageReference!
+//            if let uploadData = UIImagePNGRepresentation(self.profileImage.image!) {
+//                StorageRef = putData(uploadData,metaData:nil,Completion:{(metadata,error) in
+//                    if error != nil {
+//                        print(error)
+//                        return
+//                    }
+//                    print(metadata)
+//                })
+        
+//        }
+        
+//        let storageRef = Storage.reference()
+        
         // Do any additional setup after loading the view.
+        
+    
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)

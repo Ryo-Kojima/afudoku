@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 class signupViewController: UIViewController {
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -96,7 +97,7 @@ class signupViewController: UIViewController {
             }
             var ref: DatabaseReference!
             
-ref = Database.database().reference()
+            ref = Database.database().reference()
             let usersReference = ref.child("users")
             print(ref.description()); //https://afudoku-4ebb8.firebaseio.com/
             let uid = user.uid
@@ -104,6 +105,7 @@ ref = Database.database().reference()
             usersReference.setValue(["username" : self.user.text!,"email" : self.email.text!])
             print("description: \(usersReference.description())")
             print(user)
+            
             } as? AuthResultCallback
         
         )}

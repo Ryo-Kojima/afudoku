@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qk5-6Z-sF4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="njb-YV-W4t">
+            <objects>
+                <viewController id="4bE-8O-YHW" customClass="activityViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rqy-uN-OOX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yn5-xe-HKF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="748"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWJ-kq-MXg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yn5-xe-HKF" firstAttribute="leading" secondItem="BGB-6e-TAH" secondAttribute="leading" id="4TH-Fc-cae"/>
+                            <constraint firstItem="yn5-xe-HKF" firstAttribute="trailing" secondItem="BGB-6e-TAH" secondAttribute="trailing" id="5Z5-7j-fMc"/>
+                            <constraint firstItem="yn5-xe-HKF" firstAttribute="bottom" secondItem="BGB-6e-TAH" secondAttribute="bottom" constant="145" id="Uxj-j7-2l8"/>
+                            <constraint firstItem="yn5-xe-HKF" firstAttribute="width" secondItem="Rqy-uN-OOX" secondAttribute="width" id="X77-GO-Nv7"/>
+                            <constraint firstItem="yn5-xe-HKF" firstAttribute="top" secondItem="BGB-6e-TAH" secondAttribute="top" id="rSD-Gw-Xn4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BGB-6e-TAH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="wEZ-eu-5N7">
+                        <barButtonItem key="leftBarButtonItem" image="もどる１" id="Ohd-08-hof">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="検索２" id="Xu9-OT-en8">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwq-e4-cVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3728.8000000000002" y="2461.6191904047978"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="UDX-d3-8Vw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qk5-6Z-sF4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="マイページ２" id="rWn-1y-6sb">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" red="0.3402604635" green="1" blue="0.16621260560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OXT-Xd-zGM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.3402604635" green="1" blue="0.16621260560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4bE-8O-YHW" kind="relationship" relationship="rootViewController" id="TNR-Wm-rjf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYQ-Gr-1Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873" y="2464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="もどる１" width="30" height="26"/>
+        <image name="マイページ２" width="18" height="30"/>
+        <image name="検索２" width="30" height="31"/>
+    </resources>
+    <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

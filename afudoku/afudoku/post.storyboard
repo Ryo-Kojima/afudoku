@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zn-fc-9jp">
-                                <rect key="frame" x="123" y="303" width="74" height="30"/>
+                                <rect key="frame" x="16" y="347" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.55886311249999998" green="1" blue="0.50041139239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.98380704019999998" green="1" blue="0.94914456489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="投稿"/>
@@ -98,13 +98,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="fu7-yb-iKv">
-                                <rect key="frame" x="123" y="135" width="80" height="80"/>
+                                <rect key="frame" x="123" y="135" width="74" height="80"/>
                                 <accessibility key="accessibilityConfiguration" identifier="postViewController">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Nuf-bP-Spn"/>
-                                    <constraint firstAttribute="height" constant="80" id="u2W-ze-kbv"/>
+                                    <constraint firstAttribute="height" constant="80" id="ju8-n9-RYc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -113,15 +112,15 @@
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="4Zn-fc-9jp" firstAttribute="leading" secondItem="IKA-lz-1ek" secondAttribute="leading" constant="123" id="6cN-ux-pqe"/>
-                            <constraint firstItem="fu7-yb-iKv" firstAttribute="leading" secondItem="IKA-lz-1ek" secondAttribute="leading" constant="123" id="7xW-Qd-Xsk"/>
+                            <constraint firstItem="fu7-yb-iKv" firstAttribute="leading" secondItem="IKA-lz-1ek" secondAttribute="leading" constant="123" id="3k0-ub-V6h"/>
+                            <constraint firstItem="4Zn-fc-9jp" firstAttribute="trailing" secondItem="vSA-wS-NXm" secondAttribute="trailing" id="Dv4-kI-p9l"/>
+                            <constraint firstItem="IKA-lz-1ek" firstAttribute="bottom" secondItem="4Zn-fc-9jp" secondAttribute="bottom" constant="191" id="EeI-At-dW9"/>
                             <constraint firstItem="vSA-wS-NXm" firstAttribute="top" secondItem="IKA-lz-1ek" secondAttribute="top" constant="14" id="RcA-q3-l7E"/>
-                            <constraint firstItem="IKA-lz-1ek" firstAttribute="trailing" secondItem="4Zn-fc-9jp" secondAttribute="trailing" constant="123" id="b9I-6i-nZq"/>
+                            <constraint firstItem="fu7-yb-iKv" firstAttribute="centerX" secondItem="vSA-wS-NXm" secondAttribute="centerX" id="VUl-P0-rcT"/>
                             <constraint firstItem="IKA-lz-1ek" firstAttribute="trailing" secondItem="vSA-wS-NXm" secondAttribute="trailing" constant="16" id="evN-KS-cpp"/>
-                            <constraint firstItem="IKA-lz-1ek" firstAttribute="bottom" secondItem="4Zn-fc-9jp" secondAttribute="bottom" constant="235" id="fWw-b4-ijG"/>
-                            <constraint firstItem="IKA-lz-1ek" firstAttribute="trailing" secondItem="fu7-yb-iKv" secondAttribute="trailing" constant="117" id="fcr-iH-FXN"/>
-                            <constraint firstItem="fu7-yb-iKv" firstAttribute="top" secondItem="vSA-wS-NXm" secondAttribute="bottom" constant="36" id="gOp-sT-vCP"/>
+                            <constraint firstItem="4Zn-fc-9jp" firstAttribute="leading" secondItem="vSA-wS-NXm" secondAttribute="leading" id="lbU-jm-JDR"/>
                             <constraint firstItem="vSA-wS-NXm" firstAttribute="leading" secondItem="IKA-lz-1ek" secondAttribute="leading" constant="16" id="qv7-Jh-Vp2"/>
+                            <constraint firstItem="fu7-yb-iKv" firstAttribute="top" secondItem="vSA-wS-NXm" secondAttribute="bottom" constant="36" id="se9-ss-poP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IKA-lz-1ek"/>
                     </view>
@@ -131,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GR-sO-Kgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4533.75" y="276.76056338028167"/>
+            <point key="canvasLocation" x="4533.3333333333339" y="276.35869565217394"/>
         </scene>
         <!--Post-->
         <scene sceneID="V0Y-tj-Z3W">

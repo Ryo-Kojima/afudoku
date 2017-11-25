@@ -17,11 +17,12 @@
 		A19854501F9F8186005D3E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A198544F1F9F812D005D3E37 /* LaunchScreen.storyboard */; };
 		A198545B1F9F83D1005D3E37 /* start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19854521F9F827A005D3E37 /* start.storyboard */; };
 		A198545D1F9F83E1005D3E37 /* activityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854541F9F82A9005D3E37 /* activityViewController.swift */; };
-		A198545F1F9F83E6005D3E37 /* discoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854561F9F82A9005D3E37 /* discoverViewController.swift */; };
 		A19854601F9F83E9005D3E37 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854571F9F82A9005D3E37 /* homeViewController.swift */; };
 		A19854611F9F83EC005D3E37 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854581F9F82A9005D3E37 /* profileViewController.swift */; };
 		A19854621F9F83EF005D3E37 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854591F9F82A9005D3E37 /* signinViewController.swift */; };
 		A19854631F9F83F3005D3E37 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198545A1F9F82A9005D3E37 /* signupViewController.swift */; };
+		A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301001FC8B4EE0019B2C1 /* chat.storyboard */; };
+		A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301021FC8CBCD0019B2C1 /* profile.storyboard */; };
 		A1C821341FA2CC2D00422270 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
 		A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */; };
 		A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA951F9F7A78001C63BD /* GoogleService-Info.plist */; };
@@ -43,11 +44,12 @@
 		A198544F1F9F812D005D3E37 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19854521F9F827A005D3E37 /* start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = start.storyboard; sourceTree = "<group>"; };
 		A19854541F9F82A9005D3E37 /* activityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityViewController.swift; sourceTree = "<group>"; };
-		A19854561F9F82A9005D3E37 /* discoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discoverViewController.swift; sourceTree = "<group>"; };
 		A19854571F9F82A9005D3E37 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A19854581F9F82A9005D3E37 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		A19854591F9F82A9005D3E37 /* signinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
 		A198545A1F9F82A9005D3E37 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		A1C301001FC8B4EE0019B2C1 /* chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
+		A1C301021FC8CBCD0019B2C1 /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afudoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-afudoku/Pods-afudoku.release.xcconfig"; sourceTree = "<group>"; };
 		CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_afudoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,8 @@
 				A124EA851F9F7997001C63BD /* ViewController.swift */,
 				A19854521F9F827A005D3E37 /* start.storyboard */,
 				A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */,
+				A1C301021FC8CBCD0019B2C1 /* profile.storyboard */,
+				A1C301001FC8B4EE0019B2C1 /* chat.storyboard */,
 				A11CD6921FC8485900D67576 /* home.storyboard */,
 				A11CD6901FC837D900D67576 /* post.storyboard */,
 				A19854531F9F82A9005D3E37 /* View */,
@@ -115,7 +119,6 @@
 			children = (
 				A19854541F9F82A9005D3E37 /* activityViewController.swift */,
 				A11CD6941FC8644300D67576 /* postViewController.swift */,
-				A19854561F9F82A9005D3E37 /* discoverViewController.swift */,
 				A19854571F9F82A9005D3E37 /* homeViewController.swift */,
 				A182CAC11FA3885A00EF0E24 /* chat.swift */,
 				A19854581F9F82A9005D3E37 /* profileViewController.swift */,
@@ -196,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A198545B1F9F83D1005D3E37 /* start.storyboard in Resources */,
+				A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */,
+				A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */,
 				A19854501F9F8186005D3E37 /* LaunchScreen.storyboard in Resources */,
 				A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */,
 				A124EA8B1F9F7997001C63BD /* Assets.xcassets in Resources */,
@@ -283,7 +288,6 @@
 				A19854601F9F83E9005D3E37 /* homeViewController.swift in Sources */,
 				A11CD6951FC8644300D67576 /* postViewController.swift in Sources */,
 				A19854611F9F83EC005D3E37 /* profileViewController.swift in Sources */,
-				A198545F1F9F83E6005D3E37 /* discoverViewController.swift in Sources */,
 				A182CAC21FA3885A00EF0E24 /* chat.swift in Sources */,
 				A19854631F9F83F3005D3E37 /* signupViewController.swift in Sources */,
 				A19854621F9F83EF005D3E37 /* signinViewController.swift in Sources */,

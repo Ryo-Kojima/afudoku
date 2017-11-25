@@ -14,7 +14,6 @@ class homeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Storage.storage()
-        
     }
 
 }
