@@ -8,12 +8,17 @@
 
 import UIKit
 import Firebase
-
 class homeViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Storage.storage()
     }
-
+    
+    
+    
+    @IBAction func backhomebtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

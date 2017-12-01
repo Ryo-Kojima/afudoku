@@ -23,7 +23,7 @@
 		A19854631F9F83F3005D3E37 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198545A1F9F82A9005D3E37 /* signupViewController.swift */; };
 		A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301001FC8B4EE0019B2C1 /* chat.storyboard */; };
 		A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301021FC8CBCD0019B2C1 /* profile.storyboard */; };
-		A1C821341FA2CC2D00422270 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
+		A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
 		A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */; };
 		A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA951F9F7A78001C63BD /* GoogleService-Info.plist */; };
 		F01AF3A59A42A3C485AC6F36 /* Pods_afudoku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -166,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "小嶋涼";
 				TargetAttributes = {
 					A124EA7F1F9F7997001C63BD = {
@@ -205,8 +205,8 @@
 				A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */,
 				A124EA8B1F9F7997001C63BD /* Assets.xcassets in Resources */,
 				A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */,
-				A1C821341FA2CC2D00422270 /* Info.plist in Resources */,
 				A11CD6911FC837D900D67576 /* post.storyboard in Resources */,
+				A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */,
 				A11CD6931FC8485900D67576 /* home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

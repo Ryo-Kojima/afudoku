@@ -12,28 +12,20 @@ import FirebaseStorage
 class postViewController: UIViewController {
 
     @IBOutlet weak var postcomic: UIImageView!
+    @IBOutlet weak var tap: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var selectedImage: UIImage?
         
-//        func postcomic() {
-//            var ref: StorageReference!
-//            if let uploadData = UIImagePNGRepresentation(self.profileImage.image!) {
-//                StorageRef = putData(uploadData,metaData:nil,Completion:{(metadata,error) in
-//                    if error != nil {
-//                        print(error)
-//                        return
-//                    }
-//                    print(metadata)
-//                })
+        let tapping = UITapGestureRecognizer(target:self,action: #selector(postViewController.handleSelecttap ))
+        tap.addGestureRecognizer(tapping)
+        tap.isUserInteractionEnabled = true
         
-//        }
-        
-//        let storageRef = Storage.reference()
-        
-        // Do any additional setup after loading the view.
-        
-    
+    }
+    @objc func handleSelecttap() {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
@@ -43,8 +35,22 @@ class postViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func postbtn(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
+        let nextView = storyboard.instantiateInitialViewController()
+        present(nextView!, animated: true, completion: nil)
+    }
+    
+    
 }
-
-
+extension postViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            tap.image = image
+        }
+        dismiss(animated: true, completion: nil)
+    }
+}
 
 

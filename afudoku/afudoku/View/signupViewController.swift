@@ -20,6 +20,14 @@ class signupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var ref: DatabaseReference!
+        
+        ref = Database.database().reference()
+        ref.child("users").child("name").setValue(["username": "Daiki"])
+        
+        
+        
         user.backgroundColor = UIColor.clear
         user.tintColor = UIColor.blue
         user.textColor = UIColor.black
@@ -102,7 +110,7 @@ class signupViewController: UIViewController {
             print(ref.description()); //https://afudoku-4ebb8.firebaseio.com/
             let uid = user.uid
             let newUserReference = usersReference.child(uid)
-            usersReference.setValue(["username" : self.user.text!,"email" : self.email.text!])
+            usersReference.setValue(["username" : self,"email" : self.email.text!])
             print("description: \(usersReference.description())")
             print(user)
             

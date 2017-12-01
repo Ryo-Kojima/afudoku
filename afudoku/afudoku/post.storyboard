@@ -90,6 +90,9 @@
                                 <color key="backgroundColor" red="0.55886311249999998" green="1" blue="0.50041139239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.98380704019999998" green="1" blue="0.94914456489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="投稿"/>
+                                <connections>
+                                    <action selector="postbtn:" destination="ba6-md-QEO" eventType="touchUpInside" id="LS6-HX-Qwn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漫画投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-wS-NXm">
                                 <rect key="frame" x="16" y="78" width="288" height="21"/>
@@ -97,7 +100,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="fu7-yb-iKv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="fu7-yb-iKv" customClass="posthandleSelecttap">
                                 <rect key="frame" x="123" y="135" width="74" height="80"/>
                                 <accessibility key="accessibilityConfiguration" identifier="postViewController">
                                     <bool key="isElement" value="YES"/>
@@ -126,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="postcomic" destination="fu7-yb-iKv" id="NdA-8P-00o"/>
+                        <outlet property="tap" destination="fu7-yb-iKv" id="CfC-ig-Qj5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GR-sO-Kgo" userLabel="First Responder" sceneMemberID="firstResponder"/>

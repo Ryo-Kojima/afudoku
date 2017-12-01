@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-x2-3h7">
-                                <rect key="frame" x="0.0" y="20" width="320" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="742"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVg-Y1-jYm">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
@@ -59,7 +59,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="S__22765666"/>
                                                 <connections>
-                                                    <segue destination="Zpt-nB-7Na" kind="presentation" id="cMh-Fj-7nW"/>
+                                                    <segue destination="Zpt-nB-7Na" kind="presentation" modalTransitionStyle="crossDissolve" id="cMh-Fj-7nW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m2-nz-b9s">
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lex-gn-xo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3811" y="-388"/>
+            <point key="canvasLocation" x="3809.5999999999999" y="-388.60569715142429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QOQ-pY-kJy">
@@ -236,6 +236,7 @@
                                                     <navigationItem title="Title" id="Ggw-eL-4wH">
                                                         <barButtonItem key="leftBarButtonItem" title="&lt;back" id="iTi-Pt-TW5">
                                                             <connections>
+                                                                <action selector="backhomebtn:" destination="N4a-fZ-Qwx" id="dNx-p1-7Sh"/>
                                                                 <segue destination="qhb-tH-Ktn" kind="showDetail" id="Rz1-9k-JqM"/>
                                                             </connections>
                                                         </barButtonItem>
@@ -274,8 +275,9 @@
                     <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BZ-th-AZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="N4a-fZ-Qwx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4719.1999999999998" y="-808.69565217391312"/>
+            <point key="canvasLocation" x="4714" y="-416"/>
         </scene>
         <!--Home-->
         <scene sceneID="Uxd-nO-01A">
@@ -319,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzN-pk-sKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5516" y="-306"/>
+            <point key="canvasLocation" x="5518" y="-159"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jyo-IU-RRf">
@@ -340,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmu-PC-Ja2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4617" y="345"/>
+            <point key="canvasLocation" x="4596" y="643"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yHB-i9-8Cw">
@@ -361,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V63-Oo-6YX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5516" y="418"/>
+            <point key="canvasLocation" x="5473" y="748"/>
         </scene>
     </scenes>
     <resources>
@@ -377,7 +379,7 @@
         <image name="漫画２" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rz1-9k-JqM"/>
+        <segue reference="VW8-Ix-VWY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
