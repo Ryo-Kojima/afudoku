@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-x2-3h7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="742"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="786"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVg-Y1-jYm">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
@@ -277,7 +277,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BZ-th-AZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N4a-fZ-Qwx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4714" y="-416"/>
+            <point key="canvasLocation" x="4734" y="-425"/>
         </scene>
         <!--Home-->
         <scene sceneID="Uxd-nO-01A">
@@ -379,7 +379,8 @@
         <image name="漫画２" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VW8-Ix-VWY"/>
+        <segue reference="cMh-Fj-7nW"/>
+        <segue reference="Rz1-9k-JqM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
