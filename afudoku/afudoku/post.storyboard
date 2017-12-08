@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <constraint firstAttribute="width" constant="60" id="P9t-HH-a4E"/>
                                 </constraints>
                                 <state key="normal" image="アフレコはコチラ"/>
+                                <connections>
+                                    <segue destination="qN4-o7-PBe" kind="show" id="jLb-Q8-3hD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys5-m9-cdH">
                                 <rect key="frame" x="16" y="78" width="288" height="21"/>
@@ -65,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="UqW-Zt-4db"/>
                     </view>
                     <navigationItem key="navigationItem" title="Post" id="fEe-0Q-VK8">
+                        <barButtonItem key="backBarButtonItem" title="back" id="xq3-ws-qPK"/>
                         <barButtonItem key="leftBarButtonItem" image="もどる１" id="Ha5-nF-NPI">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -91,7 +96,7 @@
                                 <color key="tintColor" red="0.98380704019999998" green="1" blue="0.94914456489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="投稿"/>
                                 <connections>
-                                    <action selector="postbtn:" destination="ba6-md-QEO" eventType="touchUpInside" id="LS6-HX-Qwn"/>
+                                    <action selector="postbtn:" destination="ba6-md-QEO" eventType="touchUpInside" id="N7C-u7-hMp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漫画投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-wS-NXm">
@@ -135,6 +140,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GR-sO-Kgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4533.3333333333339" y="276.35869565217394"/>
+        </scene>
+        <!--Post2 View Controller-->
+        <scene sceneID="NA8-RJ-3Su">
+            <objects>
+                <viewController id="qN4-o7-PBe" customClass="Post2ViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rgo-7p-VeX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-TD-fJa">
+                                <rect key="frame" x="16" y="78" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="hGN-sT-KvR">
+                                <rect key="frame" x="123" y="135" width="74" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TdA-pd-LEP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m75-Y5-QyX">
+                                <rect key="frame" x="16" y="347" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.55886311249999998" green="1" blue="0.50041139239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="投稿">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postbtn:" destination="VaG-1b-AiZ" eventType="touchUpInside" id="831-Nr-cPT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ley-xE-A61" firstAttribute="bottom" secondItem="m75-Y5-QyX" secondAttribute="bottom" constant="191" id="7L3-mK-w6W"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="top" secondItem="ley-xE-A61" secondAttribute="top" constant="14" id="LZf-I5-6xk"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="trailing" secondItem="Rgo-7p-VeX" secondAttribute="trailingMargin" id="VfY-nP-oFt"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="centerX" secondItem="hGN-sT-KvR" secondAttribute="centerX" id="fQ6-y0-Xoa"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="leading" secondItem="Rgo-7p-VeX" secondAttribute="leadingMargin" id="iei-Oe-Xnu"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="leading" secondItem="m75-Y5-QyX" secondAttribute="leading" id="ihw-7F-yIG"/>
+                            <constraint firstItem="QGh-TD-fJa" firstAttribute="trailing" secondItem="m75-Y5-QyX" secondAttribute="trailing" id="pQt-UF-Rfz"/>
+                            <constraint firstItem="hGN-sT-KvR" firstAttribute="leading" secondItem="ley-xE-A61" secondAttribute="leading" constant="123" id="zY4-5u-OjS"/>
+                            <constraint firstItem="hGN-sT-KvR" firstAttribute="top" secondItem="QGh-TD-fJa" secondAttribute="bottom" constant="36" id="zfw-ew-7UQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ley-xE-A61"/>
+                    </view>
+                    <connections>
+                        <outlet property="comicpost" destination="hGN-sT-KvR" id="ji3-fo-bGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmJ-CM-0X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VaG-1b-AiZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5259.375" y="275.7042253521127"/>
         </scene>
         <!--Post-->
         <scene sceneID="V0Y-tj-Z3W">

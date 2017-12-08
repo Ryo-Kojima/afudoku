@@ -17,10 +17,9 @@ class postViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let tapping = UITapGestureRecognizer(target:self,action: #selector(postViewController.handleSelecttap))
-        tap.addGestureRecognizer(tapping)
-        tap.isUserInteractionEnabled = true
+        postcomic.addGestureRecognizer(tapping)
+        postcomic.isUserInteractionEnabled = true
         
     }
     
@@ -42,26 +41,26 @@ class postViewController: UIViewController {
 extension postViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            postcomic.image = image
         }
         dismiss(animated: true, completion: nil)
     }
     @IBAction func postbtn(_ sender: Any) {
-        var storage = Storage.storage()
-        storage = Storage.storage(url:"gs://afudoku-4ebb8.appspot.com/")
-        func upload(image: UIImage) {
-            let myStorage = storage.reference()
-            if let data = UIImagePNGRepresentation(image) as NSData! {
-                myStorage.putData(data as Data, metadata: nil) { metadata, error in
-                    if (error != nil) {
-                        return
-                    }
+        
+        let storage = Storage.storage().reference().child(String(describing: postcomic))
+        
+        if let uploaData = UIImagePNGRepresentation(postcomic.image!) {
+            storage.putData(uploaData, metadata: nil) { (metadata, error) in
+                if (error != nil) {
+                    print(error)
+                    return
                 }
+                
+                print(metadata)
             }
         }
         func download(uid: String, isPartner: Bool) {
-            let storageRef = storage.reference()
-            let ref = storageRef.child("images/\(uid).png")
-            ref.getData(maxSize: 1 * 30 * 30) { (data, error) -> Void in
+            storage.getData(maxSize: 1 * 30 * 30) { (data, error) -> Void in
                 if (error != nil) {
                     return
                 }else {
