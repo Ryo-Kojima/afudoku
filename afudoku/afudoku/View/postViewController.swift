@@ -59,6 +59,7 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
                 print(metadata)
             }
         }
+        print("in")
         func download(uid: String, isPartner: Bool) {
             storage.getData(maxSize: 1 * 30 * 30) { (data, error) -> Void in
                 if (error != nil) {
