@@ -16,7 +16,8 @@ class postViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let imageName = NSUUID().uuidString
+        let storage = Storage.storage().reference().child("images").child("/(imageName).png")
         let tapping = UITapGestureRecognizer(target:self,action: #selector(postViewController.handleSelecttap))
         postcomic.addGestureRecognizer(tapping)
         postcomic.isUserInteractionEnabled = true
@@ -46,8 +47,8 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
         dismiss(animated: true, completion: nil)
     }
     @IBAction func postbtn(_ sender: Any) {
-        
-        let storage = Storage.storage().reference().child(String(describing: postcomic))
+        let imageName = NSUUID().uuidString
+        let storage = Storage.storage().reference().child("images").child("\(imageName).png")
         
         if let uploaData = UIImagePNGRepresentation(postcomic.image!) {
             storage.putData(uploaData, metadata: nil) { (metadata, error) in
@@ -57,16 +58,6 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
                 }
                 
                 print(metadata)
-            }
-        }
-        print("in")
-        func download(uid: String, isPartner: Bool) {
-            storage.getData(maxSize: 1 * 30 * 30) { (data, error) -> Void in
-                if (error != nil) {
-                    return
-                }else {
-                    print(error?.localizedDescription)
-                }
             }
         }
         let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)

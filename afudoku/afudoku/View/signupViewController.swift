@@ -24,7 +24,7 @@ class signupViewController: UIViewController {
         var ref: DatabaseReference!
         
         ref = Database.database().reference()
-        ref.child("users").child("name").setValue(["username": "Daiki"])
+        ref.child("users").child("name").setValue("Daiki")
         
         
         
