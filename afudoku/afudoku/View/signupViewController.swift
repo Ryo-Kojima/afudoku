@@ -21,13 +21,6 @@ class signupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var ref: DatabaseReference!
-        
-        ref = Database.database().reference()
-        ref.child("users").child("name").setValue("Daiki")
-        
-        
-        
         user.backgroundColor = UIColor.clear
         user.tintColor = UIColor.blue
         user.textColor = UIColor.black

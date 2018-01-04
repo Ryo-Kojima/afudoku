@@ -1,15 +1,16 @@
 //
-//  chat.swift
+//  post2ViewController.swift
 //  afudoku
 //
-//  Created by 小嶋涼 on 2017/12/29.
+//  Created by 小嶋涼 on 2017/12/30.
 //  Copyright © 2017年 小嶋涼. All rights reserved.
 //
 
 import UIKit
 
-class chat: UIViewController {
+class post2ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

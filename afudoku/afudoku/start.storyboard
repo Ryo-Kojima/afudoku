@@ -12,7 +12,7 @@
         <!--Signin View Controller-->
         <scene sceneID="dB9-h7-AUF">
             <objects>
-                <viewController id="nN5-BA-iY6" customClass="signinViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nN5-BA-iY6" customClass="signinViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6a-S5-Wc4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
         <!--Signup View Controller-->
         <scene sceneID="brM-cP-d42">
             <objects>
-                <viewController id="EoV-me-NW7" customClass="signupViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EoV-me-NW7" customClass="signupViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yzx-A2-ajk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,6 +219,6 @@
         <image name="iconmonstr-user-6-96" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VCh-7i-1Yh"/>
+        <segue reference="rIh-Hw-dZc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,4 +13,6 @@ target 'afudoku' do
   pod 'Firebase/Storage'
   pod 'JSQMessagesViewController'
   pod 'SDWebImage'
+  pod 'SwiftyJSON'
+
 end

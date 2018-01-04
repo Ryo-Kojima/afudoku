@@ -12,9 +12,9 @@
         <!--Comment-->
         <scene sceneID="ska-s0-k3D">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-odk-ow-Zqz" id="odk-ow-Zqz" customClass="activityViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-odk-ow-Zqz" id="odk-ow-Zqz" customClass="activityViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ta-le-CfH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="1qv-WC-U2h"/>
@@ -36,10 +36,11 @@
         <scene sceneID="MSS-i8-QVm">
             <objects>
                 <tabBarController storyboardIdentifier="tabbarid" id="AI1-G1-yKC" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cio-Rk-aKv">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cio-Rk-aKv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.55886311253039667" green="1" blue="0.50041139243566857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.55886311249999998" green="1" blue="0.50041139239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -80,8 +81,8 @@
         <!--post-->
         <scene sceneID="7Gx-fC-TQI">
             <objects>
-                <viewControllerPlaceholder storyboardName="post" id="9h1-qv-gcz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hOe-KC-v2b"/>
+                <viewControllerPlaceholder storyboardIdentifier="post" storyboardName="post" id="9h1-qv-gcz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Post" image="投稿２" id="hOe-KC-v2b"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFr-Rn-egD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,8 +91,8 @@
         <!--home-->
         <scene sceneID="MFW-iS-AwQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="home" id="xWe-U1-wLX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xv7-gO-8mi"/>
+                <viewControllerPlaceholder storyboardIdentifier="home" storyboardName="home" id="xWe-U1-wLX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="ホーム２" id="xv7-gO-8mi"/>
                     <size key="freeformSize" width="320" height="568"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCX-Ij-IRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,8 +102,8 @@
         <!--chat-->
         <scene sceneID="Eqd-87-a72">
             <objects>
-                <viewControllerPlaceholder storyboardName="chat" id="Jqa-0v-lVY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kNJ-SE-I0H"/>
+                <viewControllerPlaceholder storyboardIdentifier="chat" storyboardName="chat" id="Jqa-0v-lVY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="チャット３" id="kNJ-SE-I0H"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wc-pp-fGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,8 +112,8 @@
         <!--profile-->
         <scene sceneID="sje-hH-fTH">
             <objects>
-                <viewControllerPlaceholder storyboardName="profile" id="aV6-45-Wua" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VA8-Py-mMo"/>
+                <viewControllerPlaceholder storyboardIdentifier="profile" storyboardName="profile" id="aV6-45-Wua" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="マイページ２" id="VA8-Py-mMo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCD-sh-fry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +123,10 @@
     <resources>
         <image name="もどる１" width="30" height="26"/>
         <image name="コメント２" width="30" height="29"/>
+        <image name="チャット３" width="30" height="29"/>
+        <image name="ホーム２" width="30" height="26"/>
+        <image name="マイページ２" width="18" height="30"/>
+        <image name="投稿２" width="30" height="28"/>
         <image name="検索２" width="30" height="31"/>
     </resources>
     <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
