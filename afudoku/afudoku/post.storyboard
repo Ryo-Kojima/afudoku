@@ -144,7 +144,7 @@
         <!--Post2 View Controller-->
         <scene sceneID="NA8-RJ-3Su">
             <objects>
-                <viewController id="qN4-o7-PBe" customClass="post2ViewController" customModule="afudoku" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qN4-o7-PBe" customClass="post2ViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rgo-7p-VeX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="hGN-sT-KvR" customClass="post2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="hGN-sT-KvR" userLabel="Images" customClass="post2">
                                 <rect key="frame" x="123" y="135" width="74" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="TdA-pd-LEP"/>

@@ -51,11 +51,9 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
         newpost.save()
         let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController()
-        present(nextView!, animated: true, completion: nil)
+        self.tabBarController?.navigationController?.present(nextView!, animated: true, completion: nil)
         tabBarController?.selectedIndex = 0
-        
     }
-    
 }
 
 

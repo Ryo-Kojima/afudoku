@@ -22,7 +22,7 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 4
+        return 2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
 
@@ -30,7 +30,6 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let images = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! postcollection
         images.updateUI()
         return images
