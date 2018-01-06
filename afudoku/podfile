@@ -14,5 +14,5 @@ target 'afudoku' do
   pod 'JSQMessagesViewController'
   pod 'SDWebImage'
   pod 'SwiftyJSON'
-
+  pod 'Jukebox'
 end

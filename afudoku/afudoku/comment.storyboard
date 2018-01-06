@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hDZ-zv-bVt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comment-->
+        <scene sceneID="ska-s0-k3D">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-odk-ow-Zqz" id="odk-ow-Zqz" customClass="activityViewController" customModule="afudoku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ta-le-CfH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="1qv-WC-U2h"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comment" id="Yzi-J3-pBM">
+                        <barButtonItem key="leftBarButtonItem" image="もどる１" id="aP1-iy-iBj">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="検索２" id="d8C-7R-UEA">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSC-dF-lzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="1662"/>
+        </scene>
+        <!--Comment-->
+        <scene sceneID="kal-hR-4Xs">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-hDZ-zv-bVt" automaticallyAdjustsScrollViewInsets="NO" id="hDZ-zv-bVt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Comment" image="コメント２" id="hHz-Q8-dlc">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" red="0.3402604635" green="1" blue="0.16621260560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dsh-Cp-fzY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.3402604635" green="1" blue="0.16621260560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="odk-ow-Zqz" kind="relationship" relationship="rootViewController" id="5t0-Ge-NFT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHM-kA-wPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873" y="1662"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="もどる１" width="30" height="26"/>
+        <image name="コメント２" width="30" height="29"/>
+        <image name="検索２" width="30" height="31"/>
+    </resources>
+    <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

@@ -8,12 +8,14 @@
 
 import UIKit
 import Firebase
+
 class homeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var comic: UICollectionView!
     
     @IBOutlet weak var image: UIImageView!
     var posts = [post]()
+    let photos = ["manga1","manga2","manga3","manga4","manga5"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,8 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let images = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! postcollection
+        images.backgroundColor = .clear
+//        images.image = UIImage(named: photos)
         images.updateUI()
         return images
     }

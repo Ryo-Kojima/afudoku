@@ -19,9 +19,7 @@ class postViewController: UIViewController {
         let tapping = UITapGestureRecognizer(target:self,action: #selector(postViewController.handleSelecttap))
         images.addGestureRecognizer(tapping)
         images.isUserInteractionEnabled = true
-        
     }
-    
     @objc func handleSelecttap() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
@@ -34,7 +32,6 @@ class postViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }
 extension postViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -47,10 +44,10 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func postbtn(_ sender: Any) {
-        let newpost = post(image: takenImage)
-        newpost.save()
-        let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
-        let nextView = storyboard.instantiateInitialViewController()
+    let newpost = post(image: takenImage)
+    newpost.save()
+    let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
+    let nextView = storyboard.instantiateInitialViewController()
         self.tabBarController?.navigationController?.present(nextView!, animated: true, completion: nil)
         tabBarController?.selectedIndex = 0
     }

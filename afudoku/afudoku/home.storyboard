@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,39 +15,34 @@
             <objects>
                 <viewController id="qhb-tH-Ktn" customClass="homeViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="94P-cD-PPp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hBb-3B-5Pq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hBb-3B-5Pq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZtB-Ld-d1R">
-                                <rect key="frame" x="0.0" y="114" width="320" height="346"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZtB-Ld-d1R">
+                                <rect key="frame" x="0.0" y="114" width="320" height="454"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="10" id="HzN-hP-XcB">
-                                    <size key="itemSize" width="260" height="130"/>
+                                    <size key="itemSize" width="240" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="Cell" id="YdV-IH-wSu" customClass="postcollection" customModule="afudoku" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="0.0" width="260" height="130"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="Cell" id="YdV-IH-wSu" customClass="postcollection" customModule="afudoku">
+                                        <rect key="frame" x="40" y="0.0" width="240" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-ts-5XB">
-                                                    <rect key="frame" x="0.0" y="-2" width="260" height="134"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-ts-5XB">
+                                                    <rect key="frame" x="0.0" y="-2" width="240" height="134"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="r7D-ts-5XB" secondAttribute="trailing" id="HaJ-qg-LIy"/>
-                                            <constraint firstItem="r7D-ts-5XB" firstAttribute="top" secondItem="YdV-IH-wSu" secondAttribute="top" constant="-2" id="IkZ-ei-Wlj"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="r7D-ts-5XB" secondAttribute="bottom" constant="-10" id="Qfu-4f-wE5"/>
-                                            <constraint firstItem="r7D-ts-5XB" firstAttribute="leading" secondItem="YdV-IH-wSu" secondAttribute="leading" id="xix-S1-whu"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="image" destination="r7D-ts-5XB" id="cXe-14-bh2"/>
                                         </connections>
@@ -67,7 +61,7 @@
                             <constraint firstItem="hBb-3B-5Pq" firstAttribute="trailing" secondItem="ZtB-Ld-d1R" secondAttribute="trailing" id="JsA-qp-LGT"/>
                             <constraint firstItem="hBb-3B-5Pq" firstAttribute="bottom" secondItem="yIS-iM-bdd" secondAttribute="bottom" id="U6e-V2-wFX"/>
                             <constraint firstItem="hBb-3B-5Pq" firstAttribute="leading" secondItem="ZtB-Ld-d1R" secondAttribute="leading" id="W0p-ST-EQV"/>
-                            <constraint firstItem="yIS-iM-bdd" firstAttribute="bottom" secondItem="ZtB-Ld-d1R" secondAttribute="bottom" constant="15" id="Zdo-Nq-IJo"/>
+                            <constraint firstItem="yIS-iM-bdd" firstAttribute="bottom" secondItem="ZtB-Ld-d1R" secondAttribute="bottom" id="Zdo-Nq-IJo"/>
                             <constraint firstAttribute="trailing" secondItem="ZtB-Ld-d1R" secondAttribute="trailing" id="iea-QK-c48"/>
                             <constraint firstItem="ZtB-Ld-d1R" firstAttribute="top" secondItem="yIS-iM-bdd" secondAttribute="top" constant="50" id="lV2-D3-qIT"/>
                         </constraints>
@@ -86,20 +80,19 @@
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="comic" destination="ZtB-Ld-d1R" id="HK7-Tp-KhE"/>
-                        <segue destination="Zpt-nB-7Na" kind="show" id="pMz-d0-m53"/>
+                        <segue destination="Zpt-nB-7Na" kind="show" identifier="SubVC" id="avm-Sy-ZUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lex-gn-xo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3808.125" y="-388.73239436619718"/>
+            <point key="canvasLocation" x="3806.25" y="-389.78873239436621"/>
         </scene>
         <!--comic-->
         <scene sceneID="QOQ-pY-kJy">
             <objects>
-                <viewController id="Zpt-nB-7Na" customClass="SubViewController" sceneMemberID="viewController">
+                <viewController id="Zpt-nB-7Na" customClass="SubViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Lk-gZ-sw4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +102,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5W-pB-XoH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manga1" translatesAutoresizingMaskIntoConstraints="NO" id="fxc-hP-hCI">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1000" id="Lzz-1x-JiP"/>
@@ -144,9 +131,6 @@
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
-                    <connections>
-                        <outlet property="comics" destination="fxc-hP-hCI" id="nup-Om-gQi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BZ-th-AZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +139,7 @@
         <!--Home-->
         <scene sceneID="Uxd-nO-01A">
             <objects>
-                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="esx-T3-IrA" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="esx-T3-IrA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="ホーム２" id="0de-u7-mtN">
                         <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
@@ -167,10 +151,6 @@
                         <color key="tintColor" red="0.3402604635" green="1" blue="0.16621260560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RBU-DB-aEj">
-                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="qhb-tH-Ktn" kind="relationship" relationship="rootViewController" id="VW8-Ix-VWY"/>
                     </connections>
@@ -182,7 +162,6 @@
     </scenes>
     <resources>
         <image name="back" width="215" height="382"/>
-        <image name="manga1" width="600" height="1141"/>
         <image name="もどる１" width="30" height="26"/>
         <image name="ホーム２" width="30" height="26"/>
         <image name="検索２" width="30" height="31"/>
