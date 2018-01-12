@@ -90,6 +90,15 @@ class signupViewController: UIViewController {
     @IBAction func dismiss_onClick(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func rule(_ sender: Any) {
+        let url = URL(string: "http://afudoku.bambina.jp/AFUDOKU/index.html")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
     @IBAction func signUp_btn(_ sender: Any) {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!, completion: {(user: User, error: Error?)in
             if error != nil {

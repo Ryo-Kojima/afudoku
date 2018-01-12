@@ -20,15 +20,15 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
         // Do any additional setup after loading the view.
 
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 2
+        return 6
     }
     func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
 
         return posts.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let images = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! postcollection
         images.updateUI()

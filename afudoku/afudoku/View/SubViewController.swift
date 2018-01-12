@@ -7,20 +7,36 @@
 //
 
 import UIKit
+import AVFoundation
 class SubViewController: UIViewController {
 
     @IBOutlet weak var comics: UIImageView!
     var selectedImg: UIImage!
+    var audioPlayer: AVAudioPlayer!
+
 
     override func viewDidLoad() {
-
-
         super.viewDidLoad()
         comics.image = selectedImg
 
         comics.contentMode = UIViewContentMode.scaleAspectFit
+        
+        let url = Bundle.main.url(forResource: "music", withExtension: "mp3")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            audioPlayer.prepareToPlay()
+        }
+        catch let error as NSError {
+            print(error.debugDescription)
+        }
         // Do any additional setup after loading the view.
     }
+    @IBAction func audio(_ sender: Any) {
+        audioPlayer.play()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

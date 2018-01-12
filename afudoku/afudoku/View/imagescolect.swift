@@ -32,7 +32,7 @@ class post {
         let updata = Database.database().reference().child("upload").childByAutoId()
         let newPhoto = updata.key
         
-        if let imagedata = UIImageJPEGRepresentation(self.images,0.1) {
+        if let imagedata = UIImageJPEGRepresentation(self.images,0.5) {
             let storageRef = Storage.storage().reference().child("images")
             let newimagesRef = storageRef.child(newPhoto + ".jpg")
             let metadata = StorageMetadata()

@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FirebaseStorage
 class postViewController: UIViewController {
 
     @IBOutlet weak var images: UIImageView!

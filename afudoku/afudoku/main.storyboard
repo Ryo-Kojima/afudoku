@@ -14,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="UIViewController-odk-ow-Zqz" id="odk-ow-Zqz" customClass="activityViewController" customModule="afudoku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ta-le-CfH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="1qv-WC-U2h"/>
@@ -46,9 +46,6 @@
                     <connections>
                         <segue destination="xWe-U1-wLX" kind="relationship" relationship="viewControllers" id="Zuw-ew-Ljj"/>
                         <segue destination="9h1-qv-gcz" kind="relationship" relationship="viewControllers" id="uSH-9e-gXg"/>
-                        <segue destination="Jqa-0v-lVY" kind="relationship" relationship="viewControllers" id="4IB-eg-FkW"/>
-                        <segue destination="hDZ-zv-bVt" kind="relationship" relationship="viewControllers" id="4XF-WZ-M1K"/>
-                        <segue destination="aV6-45-Wua" kind="relationship" relationship="viewControllers" id="abz-LX-N1w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Vy-6k-9ec" userLabel="First Responder" sceneMemberID="firstResponder"/>

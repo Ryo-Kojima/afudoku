@@ -27,6 +27,7 @@
 		A1B453F11FDB35D5002411C4 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B453F01FDB35D5002411C4 /* homeViewController.swift */; };
 		A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301001FC8B4EE0019B2C1 /* chat.storyboard */; };
 		A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301021FC8CBCD0019B2C1 /* profile.storyboard */; };
+		A1D65CE12008BEE2004ADB1A /* ALIVE_inst_FreeVer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */; };
 		A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
 		A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */; };
 		A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA951F9F7A78001C63BD /* GoogleService-Info.plist */; };
@@ -58,6 +59,7 @@
 		A1B453F01FDB35D5002411C4 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A1C301001FC8B4EE0019B2C1 /* chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
 		A1C301021FC8CBCD0019B2C1 /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ALIVE_inst_FreeVer.mp3; sourceTree = "<group>"; };
 		A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afudoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-afudoku/Pods-afudoku.release.xcconfig"; sourceTree = "<group>"; };
 		CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_afudoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				A1C301001FC8B4EE0019B2C1 /* chat.storyboard */,
 				A11CD6921FC8485900D67576 /* home.storyboard */,
 				A11CD6901FC837D900D67576 /* post.storyboard */,
+				A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */,
 				A19854531F9F82A9005D3E37 /* View */,
 				A124EA8A1F9F7997001C63BD /* Assets.xcassets */,
 				A198544F1F9F812D005D3E37 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 				A124EA8B1F9F7997001C63BD /* Assets.xcassets in Resources */,
 				A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */,
 				A11CD6911FC837D900D67576 /* post.storyboard in Resources */,
+				A1D65CE12008BEE2004ADB1A /* ALIVE_inst_FreeVer.mp3 in Resources */,
 				A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */,
 				A11CD6931FC8485900D67576 /* home.storyboard in Resources */,
 			);
