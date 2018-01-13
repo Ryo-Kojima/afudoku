@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A124EA7F1F9F7997001C63BD"
-               BuildableName = "afudoku.app"
-               BlueprintName = "afudoku"
+               BuildableName = "AppIcon.app"
+               BlueprintName = "AppIcon"
                ReferencedContainer = "container:afudoku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A124EA7F1F9F7997001C63BD"
-            BuildableName = "afudoku.app"
-            BlueprintName = "afudoku"
+            BuildableName = "AppIcon.app"
+            BlueprintName = "AppIcon"
             ReferencedContainer = "container:afudoku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -58,8 +58,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A124EA7F1F9F7997001C63BD"
-            BuildableName = "afudoku.app"
-            BlueprintName = "afudoku"
+            BuildableName = "AppIcon.app"
+            BlueprintName = "AppIcon"
             ReferencedContainer = "container:afudoku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -83,8 +83,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A124EA7F1F9F7997001C63BD"
-            BuildableName = "afudoku.app"
-            BlueprintName = "afudoku"
+            BuildableName = "AppIcon.app"
+            BlueprintName = "AppIcon"
             ReferencedContainer = "container:afudoku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

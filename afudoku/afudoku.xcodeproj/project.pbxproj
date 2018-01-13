@@ -27,7 +27,7 @@
 		A1B453F11FDB35D5002411C4 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B453F01FDB35D5002411C4 /* homeViewController.swift */; };
 		A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301001FC8B4EE0019B2C1 /* chat.storyboard */; };
 		A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301021FC8CBCD0019B2C1 /* profile.storyboard */; };
-		A1D65CE12008BEE2004ADB1A /* ALIVE_inst_FreeVer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */; };
+		A1D65CE520093E56004ADB1A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D65CE420093E56004ADB1A /* music.mp3 */; };
 		A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
 		A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */; };
 		A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA951F9F7A78001C63BD /* GoogleService-Info.plist */; };
@@ -39,7 +39,7 @@
 		A11CD6901FC837D900D67576 /* post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = post.storyboard; sourceTree = "<group>"; };
 		A11CD6921FC8485900D67576 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		A11CD6941FC8644300D67576 /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
-		A124EA801F9F7997001C63BD /* afudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = afudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A124EA801F9F7997001C63BD /* AppIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124EA831F9F7997001C63BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A124EA851F9F7997001C63BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A124EA8A1F9F7997001C63BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		A1B453F01FDB35D5002411C4 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A1C301001FC8B4EE0019B2C1 /* chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
 		A1C301021FC8CBCD0019B2C1 /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
-		A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ALIVE_inst_FreeVer.mp3; sourceTree = "<group>"; };
+		A1D65CE420093E56004ADB1A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afudoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-afudoku/Pods-afudoku.release.xcconfig"; sourceTree = "<group>"; };
 		CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_afudoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +99,7 @@
 		A124EA811F9F7997001C63BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A124EA801F9F7997001C63BD /* afudoku.app */,
+				A124EA801F9F7997001C63BD /* AppIcon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 				A1C301001FC8B4EE0019B2C1 /* chat.storyboard */,
 				A11CD6921FC8485900D67576 /* home.storyboard */,
 				A11CD6901FC837D900D67576 /* post.storyboard */,
-				A1D65CE02008BEE1004ADB1A /* ALIVE_inst_FreeVer.mp3 */,
+				A1D65CE420093E56004ADB1A /* music.mp3 */,
 				A19854531F9F82A9005D3E37 /* View */,
 				A124EA8A1F9F7997001C63BD /* Assets.xcassets */,
 				A198544F1F9F812D005D3E37 /* LaunchScreen.storyboard */,
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A124EA7F1F9F7997001C63BD /* afudoku */ = {
+		A124EA7F1F9F7997001C63BD /* AppIcon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A124EA921F9F7997001C63BD /* Build configuration list for PBXNativeTarget "afudoku" */;
+			buildConfigurationList = A124EA921F9F7997001C63BD /* Build configuration list for PBXNativeTarget "AppIcon" */;
 			buildPhases = (
 				BDAB45AC02AAC34FC57CDF91 /* [CP] Check Pods Manifest.lock */,
 				A124EA7C1F9F7997001C63BD /* Sources */,
@@ -169,9 +169,9 @@
 			);
 			dependencies = (
 			);
-			name = afudoku;
+			name = AppIcon;
 			productName = afudoku;
-			productReference = A124EA801F9F7997001C63BD /* afudoku.app */;
+			productReference = A124EA801F9F7997001C63BD /* AppIcon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A124EA7F1F9F7997001C63BD /* afudoku */,
+				A124EA7F1F9F7997001C63BD /* AppIcon */,
 			);
 		};
 /* End PBXProject section */
@@ -221,9 +221,9 @@
 				A124EA8B1F9F7997001C63BD /* Assets.xcassets in Resources */,
 				A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */,
 				A11CD6911FC837D900D67576 /* post.storyboard in Resources */,
-				A1D65CE12008BEE2004ADB1A /* ALIVE_inst_FreeVer.mp3 in Resources */,
 				A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */,
 				A11CD6931FC8485900D67576 /* home.storyboard in Resources */,
+				A1D65CE520093E56004ADB1A /* music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +232,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		1202CFE734177B8B40C7FB4A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -260,7 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-afudoku/Pods-afudoku-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		89B24A9A079958639937DF94 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -432,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C4D6BBC38938A997AEAD82A /* Pods-afudoku.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB3DQL2V92;
 				INFOPLIST_FILE = afudoku/Info.plist;
@@ -448,7 +447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB3DQL2V92;
 				INFOPLIST_FILE = afudoku/Info.plist;
@@ -472,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A124EA921F9F7997001C63BD /* Build configuration list for PBXNativeTarget "afudoku" */ = {
+		A124EA921F9F7997001C63BD /* Build configuration list for PBXNativeTarget "AppIcon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A124EA931F9F7997001C63BD /* Debug */,
