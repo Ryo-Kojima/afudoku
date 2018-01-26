@@ -12,7 +12,7 @@
         <!--Chat-->
         <scene sceneID="SyT-XV-cWu">
             <objects>
-                <viewController id="YBW-g7-LNE" customClass="chat" customModule="afudoku" sceneMemberID="viewController">
+                <viewController id="YBW-g7-LNE" customClass="chat" customModule="AppIcon" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="stG-6w-XQM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -18,8 +18,8 @@ class post {
         self.images = image
     }
     init(snapshot: DataSnapshot) {
-//        let json = JSON(snapshot.value ?? NSValue.self)
-//        self.imagesDownloadURL = json["imageDownloadURL"].stringValue
+        let json = JSON(snapshot.value ?? NSValue.self)
+        self.imagesDownloadURL = json["imageDownloadURL"].stringValue
 //        if let value = value as? NSDictionary {
 //            for (k, v) in value {
 //                if let report = Report.factory(id: k as! String, _data: v) {
@@ -40,7 +40,7 @@ class post {
             newimagesRef.putData(imagedata,metadata: metadata).observe(.success, handler:
                 { (snapshot) in
                 self.imagesDownloadURL = snapshot.metadata?.downloadURL()?.absoluteString
-                let newPostDictionary = ["imageDownloadURL" : self.imagesDownloadURL]
+                let newPostDictionary = ["imagesDownloadURL" : self.imagesDownloadURL]
                     
                 updata.setValue(newPostDictionary)
             })

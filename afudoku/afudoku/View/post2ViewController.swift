@@ -7,28 +7,53 @@
 //
 
 import UIKit
+import Firebase
+
 
 class post2ViewController: UIViewController {
 
     
+    @IBOutlet weak var images: UIImageView!
+    @IBOutlet weak var tap: UIImageView!
+    var takenImage: UIImage!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let tapping = UITapGestureRecognizer(target:self,action: #selector(postViewController.handleSelecttap))
+        images.addGestureRecognizer(tapping)
+        images.isUserInteractionEnabled = true
     }
-
+    @objc func handleSelecttap() {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        pickerController.allowsEditing = true
+        present(pickerController, animated: true, completion: nil)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension post2ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let image = info["UIImagePickerControllerOriginalImage"] as! UIImage
+        self.takenImage = image
+        self.images.image = self.takenImage
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func postbtn(_ sender: Any) {
+        if takenImage != nil {
+            let newpost = post(image: takenImage)
+            newpost.save()
+        }
+        let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
+        let nextView = storyboard.instantiateInitialViewController()
+        self.tabBarController?.navigationController?.present(nextView!, animated: true, completion: nil)
+        tabBarController?.selectedIndex = 0
+    }
 }

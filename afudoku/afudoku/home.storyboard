@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,7 +15,7 @@
         <!--Home-->
         <scene sceneID="hjy-oH-hXq">
             <objects>
-                <viewController id="qhb-tH-Ktn" customClass="homeViewController" customModule="afudoku" sceneMemberID="viewController">
+                <viewController id="qhb-tH-Ktn" customClass="homeViewController" customModule="AppIcon" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="94P-cD-PPp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="Cell" id="YdV-IH-wSu" customClass="postcollection" customModule="afudoku" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="Cell" id="YdV-IH-wSu" customClass="postcollection" customModule="AppIcon">
                                         <rect key="frame" x="77" y="0.0" width="260" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -41,12 +42,26 @@
                                                 <imageView opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-ts-5XB">
                                                     <rect key="frame" x="-1" y="0.0" width="260" height="130"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-9K-Bwj">
+                                                    <rect key="frame" x="20" y="80" width="220" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="2gh-9K-Bwj" secondAttribute="height" multiplier="22:3" id="klh-SD-h26"/>
+                                                    </constraints>
+                                                    <state key="normal" title="読書"/>
+                                                    <connections>
+                                                        <segue destination="Zpt-nB-7Na" kind="show" id="dR0-wj-IUd"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="2gh-9K-Bwj" firstAttribute="leading" secondItem="YdV-IH-wSu" secondAttribute="leadingMargin" constant="12" id="7at-CF-Nd9"/>
                                             <constraint firstItem="r7D-ts-5XB" firstAttribute="leading" secondItem="YdV-IH-wSu" secondAttribute="leadingMargin" constant="-9" id="7dy-aq-XPE"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="2gh-9K-Bwj" secondAttribute="trailing" constant="12" id="ZMf-d9-isT"/>
                                             <constraint firstAttribute="bottom" secondItem="r7D-ts-5XB" secondAttribute="bottom" id="foj-Ep-M1A"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="2gh-9K-Bwj" secondAttribute="bottom" constant="12" id="u4G-RA-Dmt"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="r7D-ts-5XB" secondAttribute="trailing" constant="-7" id="uDN-jI-aqM"/>
+                                            <constraint firstItem="2gh-9K-Bwj" firstAttribute="top" secondItem="YdV-IH-wSu" secondAttribute="topMargin" constant="72" id="yOd-bC-jAV"/>
                                             <constraint firstItem="r7D-ts-5XB" firstAttribute="top" secondItem="YdV-IH-wSu" secondAttribute="top" id="yPQ-BG-Xdj"/>
                                         </constraints>
                                         <connections>
@@ -80,6 +95,9 @@
                             <barButtonItem image="もどる１" id="hSG-ha-YBD">
                                 <inset key="imageInsets" minX="0.0" minY="0.0" maxX="22" maxY="0.0"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="sign_out:" destination="qhb-tH-Ktn" id="6bC-29-NCi"/>
+                                </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
                     </navigationItem>
@@ -95,7 +113,7 @@
         <!--comic-->
         <scene sceneID="QOQ-pY-kJy">
             <objects>
-                <viewController id="Zpt-nB-7Na" customClass="SubViewController" sceneMemberID="viewController">
+                <viewController id="Zpt-nB-7Na" customClass="SubViewController" customModule="AppIcon" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Lk-gZ-sw4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

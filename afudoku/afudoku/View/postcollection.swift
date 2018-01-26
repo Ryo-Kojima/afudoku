@@ -12,7 +12,7 @@ class postcollection: UICollectionViewCell {
     
     
     @IBOutlet var image: UIImageView!
-    var post: post! {
+    var post: post? {
         didSet {
             self.updateUI()
         }
@@ -22,11 +22,11 @@ class postcollection: UICollectionViewCell {
         
         Database.database().reference().child("upload").observe(.childAdded) {
             (snapshot) in
-//            if let imageDownloadURL = self.post.imagesDownloadURL {
-//            for child in snapshot.children {
+//            if (self.post?.imagesDownloadURL) != nil {
+                for _ in snapshot.children {
             
-            let imageDownloadRef = Storage.storage().reference(forURL:"https://firebasestorage.googleapis.com/v0/b/afudoku-4ebb8.appspot.com/o/images%2F-L2dCs4IGADEU_SqHMmT.jpg?alt=media&token=4e9e75cf-ee4a-4f3a-9128-9105c8a40c55")
-            
+                    let imageDownloadRef = Storage.storage().reference(forURL:"https://firebasestorage.googleapis.com/v0/b/afudoku-4ebb8.appspot.com/o/images%2F-L29MXIpgNgKrRNxBfdt.jpg?alt=media&token=4eca1f9d-de99-444d-a205-6c69332d78c3")
+
             imageDownloadRef.getData(maxSize: 5 * 1024 * 1024, completion: {[weak self]
                 (data,error) in
                 if let error = error {
@@ -39,7 +39,8 @@ class postcollection: UICollectionViewCell {
                     }
                 }
               })
-        }
+          }
+//       }
     }
+  }
 }
-

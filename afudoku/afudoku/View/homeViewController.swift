@@ -12,15 +12,26 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     @IBOutlet weak var comic: UICollectionView!
     
-    @IBOutlet weak var image: UIImageView!
+    let cell = "Cell"
     var posts = [post]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
         // Do any additional setup after loading the view.
 
-    
+    @IBAction func sign_out(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let logouterror {
+            print(logouterror)
+        }
+        let storyboard = UIStoryboard(name: "start",bundle: nil)
+        let signinVC = storyboard.instantiateViewController(withIdentifier: "signinViewController")
+        self.present(signinVC, animated: true, completion: nil)
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 6
@@ -30,9 +41,9 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
         return posts.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let images = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! postcollection
-        images.updateUI()
-        return images
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cell, for: indexPath) as! postcollection
+        cell.updateUI()
+        return cell
     }
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

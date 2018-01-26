@@ -24,6 +24,7 @@ class postViewController: UIViewController {
     @objc func handleSelecttap() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
+        pickerController.allowsEditing = true
         present(pickerController, animated: true, completion: nil)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -46,8 +47,10 @@ extension postViewController: UIImagePickerControllerDelegate, UINavigationContr
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func postbtn(_ sender: Any) {
-        let newpost = post(image: takenImage)
-        newpost.save()
+        if takenImage != nil {
+          let newpost = post(image: takenImage)
+          newpost.save()
+        }
         let storyboard: UIStoryboard = UIStoryboard(name: "home", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController()
         self.tabBarController?.navigationController?.present(nextView!, animated: true, completion: nil)

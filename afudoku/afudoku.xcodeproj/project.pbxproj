@@ -25,10 +25,12 @@
 		A19854621F9F83EF005D3E37 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19854591F9F82A9005D3E37 /* signinViewController.swift */; };
 		A19854631F9F83F3005D3E37 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198545A1F9F82A9005D3E37 /* signupViewController.swift */; };
 		A1B453F11FDB35D5002411C4 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B453F01FDB35D5002411C4 /* homeViewController.swift */; };
+		A1C15134201BC57300AA61E5 /* audiocolect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C15133201BC57300AA61E5 /* audiocolect.swift */; };
 		A1C301011FC8B4EE0019B2C1 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301001FC8B4EE0019B2C1 /* chat.storyboard */; };
 		A1C301031FC8CBCD0019B2C1 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C301021FC8CBCD0019B2C1 /* profile.storyboard */; };
 		A1D65CE520093E56004ADB1A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1D65CE420093E56004ADB1A /* music.mp3 */; };
 		A1ED760C1FD1D888004A2CC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA8F1F9F7997001C63BD /* Info.plist */; };
+		A1F0FC25200C604F00E81069 /* Gpost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0FC24200C604F00E81069 /* Gpost.swift */; };
 		A1FAFFCB1F9F9B7800D99D00 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */; };
 		A1FAFFCC1F9FC2E800D99D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A124EA951F9F7A78001C63BD /* GoogleService-Info.plist */; };
 		F01AF3A59A42A3C485AC6F36 /* Pods_afudoku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -57,9 +59,11 @@
 		A19854591F9F82A9005D3E37 /* signinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
 		A198545A1F9F82A9005D3E37 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		A1B453F01FDB35D5002411C4 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		A1C15133201BC57300AA61E5 /* audiocolect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audiocolect.swift; sourceTree = "<group>"; };
 		A1C301001FC8B4EE0019B2C1 /* chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
 		A1C301021FC8CBCD0019B2C1 /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		A1D65CE420093E56004ADB1A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		A1F0FC24200C604F00E81069 /* Gpost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gpost.swift; sourceTree = "<group>"; };
 		A1FAFFCA1F9F9B7800D99D00 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afudoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-afudoku/Pods-afudoku.release.xcconfig"; sourceTree = "<group>"; };
 		CA242EEAFB1C06420C477E06 /* Pods_afudoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_afudoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,9 +140,11 @@
 				A1B453F01FDB35D5002411C4 /* homeViewController.swift */,
 				A142884A1FE4507E00768076 /* SubViewController.swift */,
 				A18B650E1FEB933D0086C5F1 /* imagescolect.swift */,
+				A1C15133201BC57300AA61E5 /* audiocolect.swift */,
 				A12C66AC1FED3AF400B98B06 /* postcollection.swift */,
 				A16017FB1FF64068005FEBB6 /* chat.swift */,
 				A160181B1FF6E3BE005FEBB6 /* post2ViewController.swift */,
+				A1F0FC24200C604F00E81069 /* Gpost.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				A18B650F1FEB933D0086C5F1 /* imagescolect.swift in Sources */,
 				A160181C1FF6E3BE005FEBB6 /* post2ViewController.swift in Sources */,
 				A19854611F9F83EC005D3E37 /* profileViewController.swift in Sources */,
+				A1F0FC25200C604F00E81069 /* Gpost.swift in Sources */,
+				A1C15134201BC57300AA61E5 /* audiocolect.swift in Sources */,
 				A19854631F9F83F3005D3E37 /* signupViewController.swift in Sources */,
 				A19854621F9F83EF005D3E37 /* signinViewController.swift in Sources */,
 				A198545D1F9F83E1005D3E37 /* activityViewController.swift in Sources */,
@@ -431,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C4D6BBC38938A997AEAD82A /* Pods-afudoku.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = afudoku;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB3DQL2V92;
 				INFOPLIST_FILE = afudoku/Info.plist;
@@ -447,7 +455,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB30EA8A18CDE7EBC1CCA869 /* Pods-afudoku.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = afudoku;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB3DQL2V92;
 				INFOPLIST_FILE = afudoku/Info.plist;
