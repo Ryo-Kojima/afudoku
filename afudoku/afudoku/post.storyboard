@@ -38,25 +38,15 @@
                                     <segue destination="ba6-md-QEO" kind="show" id="Z6x-x7-6b5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzf-mn-YKY">
-                                <rect key="frame" x="157" y="471" width="60" height="113"/>
-                                <state key="normal" title="Button" image="アフレコはコチラ"/>
-                                <connections>
-                                    <segue destination="qN4-o7-PBe" kind="show" id="9le-PE-9BR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UqW-Zt-4db" firstAttribute="trailing" secondItem="Mh7-19-dE0" secondAttribute="trailing" constant="158" id="8g0-eG-AjB"/>
-                            <constraint firstItem="tzf-mn-YKY" firstAttribute="leading" secondItem="Mh7-19-dE0" secondAttribute="leading" id="9fm-XQ-Zdv"/>
                             <constraint firstItem="ys5-m9-cdH" firstAttribute="trailing" secondItem="AcD-f6-j6X" secondAttribute="trailingMargin" id="CKc-8E-6mt"/>
-                            <constraint firstItem="tzf-mn-YKY" firstAttribute="trailing" secondItem="Mh7-19-dE0" secondAttribute="trailing" id="CtN-Hd-8yx"/>
                             <constraint firstItem="ys5-m9-cdH" firstAttribute="leading" secondItem="AcD-f6-j6X" secondAttribute="leadingMargin" id="JBa-7A-XKo"/>
                             <constraint firstItem="Mh7-19-dE0" firstAttribute="top" secondItem="ys5-m9-cdH" secondAttribute="bottom" constant="213" id="UuR-WM-zca"/>
                             <constraint firstItem="ys5-m9-cdH" firstAttribute="top" secondItem="UqW-Zt-4db" secondAttribute="top" constant="14" id="Zcr-JL-b5p"/>
                             <constraint firstItem="Mh7-19-dE0" firstAttribute="leading" secondItem="UqW-Zt-4db" secondAttribute="leading" constant="157" id="aUj-mB-zuL"/>
-                            <constraint firstItem="tzf-mn-YKY" firstAttribute="top" secondItem="Mh7-19-dE0" secondAttribute="bottom" constant="8" symbolic="YES" id="dM1-TO-tDm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UqW-Zt-4db"/>
                     </view>
@@ -136,13 +126,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音声投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-TD-fJa">
-                                <rect key="frame" x="16" y="102" width="343" height="21"/>
+                                <rect key="frame" x="16" y="58" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="hGN-sT-KvR" userLabel="Images" customClass="posthandleSelecttap">
-                                <rect key="frame" x="123" y="159" width="129" height="80"/>
+                                <rect key="frame" x="123" y="115" width="129" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="TdA-pd-LEP"/>
                                 </constraints>
@@ -208,7 +198,6 @@
     </scenes>
     <resources>
         <image name="post" width="512" height="512"/>
-        <image name="アフレコはコチラ" width="60" height="113"/>
         <image name="投稿２" width="30" height="28"/>
         <image name="漫画投稿はコチラ" width="120" height="226"/>
     </resources>

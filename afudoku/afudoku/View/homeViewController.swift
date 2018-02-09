@@ -12,10 +12,11 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     @IBOutlet weak var comic: UICollectionView!
     
-    let cell = "Cell"
-    var posts = [post]()
+    let photos = ["manga1", "manga2","manga3","manga4","manga5","manga6"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
     }
@@ -38,12 +39,18 @@ class homeViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
 
-        return posts.count
+        return 1
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cell, for: indexPath) as! postcollection
-        cell.updateUI()
-        return cell
+        let testCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        let imageView = testCell.contentView.viewWithTag(1) as! UIImageView
+    
+        let cellImage = UIImage(named: photos[indexPath.row])
+        
+        imageView.image = cellImage
+        
+        return testCell
     }
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

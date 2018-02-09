@@ -10,18 +10,17 @@ import UIKit
 import AVFoundation
 class SubViewController: UIViewController {
 
-    @IBOutlet weak var comics: UIImageView!
+    @IBOutlet weak var Comics: UIImageView!
     var selectedImg: UIImage!
     var audioPlayer: AVAudioPlayer!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        comics.image = selectedImg
-
-        comics.contentMode = UIViewContentMode.scaleAspectFit
         
-        let url = Bundle.main.url(forResource: "music", withExtension: "mp3")
+        Comics.image = UIImage(named: "manga5-2")
+        
+        let url = Bundle.main.url(forResource: "afudoku", withExtension: "m4a")
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url!)

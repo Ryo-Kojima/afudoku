@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,16 +33,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39J-4g-0aI">
-                                <rect key="frame" x="16" y="474" width="257" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39J-4g-0aI">
+                                <rect key="frame" x="16" y="464" width="257" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="P6F-YM-2at"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxD-gb-HYY">
-                                <rect key="frame" x="274" y="474" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxD-gb-HYY">
+                                <rect key="frame" x="274" y="472" width="36" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="send"/>
                             </button>
@@ -49,20 +51,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6ZE-no-lQL" firstAttribute="bottom" secondItem="Ubl-Ex-tBJ" secondAttribute="bottom" constant="-54" id="CfD-23-AiR"/>
+                            <constraint firstItem="39J-4g-0aI" firstAttribute="leading" secondItem="stG-6w-XQM" secondAttribute="leadingMargin" id="N9o-Qr-Rnh"/>
+                            <constraint firstItem="sxD-gb-HYY" firstAttribute="leading" secondItem="39J-4g-0aI" secondAttribute="trailing" constant="1" id="VZs-bM-2UG"/>
+                            <constraint firstItem="39J-4g-0aI" firstAttribute="top" secondItem="sxD-gb-HYY" secondAttribute="top" constant="-8" id="XUZ-5a-Wqt"/>
                             <constraint firstItem="6ZE-no-lQL" firstAttribute="top" secondItem="Ubl-Ex-tBJ" secondAttribute="top" id="cCs-Qp-NzV"/>
                             <constraint firstItem="6ZE-no-lQL" firstAttribute="trailing" secondItem="Ubl-Ex-tBJ" secondAttribute="trailing" id="erL-RX-LH5"/>
+                            <constraint firstItem="Ubl-Ex-tBJ" firstAttribute="bottom" secondItem="39J-4g-0aI" secondAttribute="bottom" constant="64" id="gEA-pv-Dmd"/>
+                            <constraint firstItem="39J-4g-0aI" firstAttribute="bottom" secondItem="sxD-gb-HYY" secondAttribute="bottom" id="kWr-dE-E8r"/>
                             <constraint firstItem="6ZE-no-lQL" firstAttribute="leading" secondItem="Ubl-Ex-tBJ" secondAttribute="leading" id="qow-5n-U44"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ubl-Ex-tBJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chat" id="FQ5-Vm-FNX">
-                        <barButtonItem key="leftBarButtonItem" image="もどる１" id="YhP-uT-dUJ">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="検索２" id="Jad-xv-zsC">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Chat" id="FQ5-Vm-FNX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAX-0a-nFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,9 +93,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="もどる１" width="30" height="26"/>
         <image name="チャット３" width="30" height="29"/>
-        <image name="検索２" width="30" height="31"/>
     </resources>
     <color key="tintColor" red="0.29208947569999999" green="0.90615576509999995" blue="0.21338514559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

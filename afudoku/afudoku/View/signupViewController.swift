@@ -26,30 +26,30 @@ class signupViewController: UIViewController {
         user.textColor = UIColor.black
         user.attributedPlaceholder = NSAttributedString(string: user.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 1.0, alpha: 0.6)])
         
-        let bottomLayerUser = CALayer()
-        bottomLayerUser.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
-        bottomLayerUser.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
-        user.layer.addSublayer(bottomLayerUser)
+//        let bottomLayerUser = CALayer()
+//        bottomLayerUser.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
+//        bottomLayerUser.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
+//        user.layer.addSublayer(bottomLayerUser)
         
         email.backgroundColor = UIColor.clear
         email.tintColor = UIColor.blue
         email.textColor = UIColor.black
         email.attributedPlaceholder = NSAttributedString(string: email.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 1.0, alpha: 0.6)])
         
-        let bottomLayerEmail = CALayer()
-        bottomLayerEmail.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
-        bottomLayerEmail.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
-        email.layer.addSublayer(bottomLayerEmail)
+//        let bottomLayerEmail = CALayer()
+//        bottomLayerEmail.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
+//        bottomLayerEmail.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
+//        email.layer.addSublayer(bottomLayerEmail)
         
         password.backgroundColor = UIColor.clear
         password.tintColor = UIColor.blue
         password.textColor = UIColor.black
         password.attributedPlaceholder = NSAttributedString(string: password.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 1.0, alpha: 0.6)])
         
-        let bottomLayerPassword = CALayer()
-        bottomLayerPassword.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
-        bottomLayerPassword.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
-        password.layer.addSublayer(bottomLayerPassword)
+//        let bottomLayerPassword = CALayer()
+//        bottomLayerPassword.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
+//        bottomLayerPassword.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
+//        password.layer.addSublayer(bottomLayerPassword)
         
         profileImage.layer.cornerRadius = 40
         profileImage.clipsToBounds = true
@@ -92,7 +92,7 @@ class signupViewController: UIViewController {
     }
     
     @IBAction func rule(_ sender: Any) {
-        let url = URL(string: "http://afudoku.bambina.jp/AFUDOKU/index.html")!
+        let url = URL(string: "http://covo.sub.jp/AFUDOKU/")!
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         }
